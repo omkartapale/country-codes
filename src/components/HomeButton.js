@@ -5,7 +5,7 @@ const HomeButton = () => {
   return (
     <div className="HomeButton dropdown">
       <button className="btn rounded-circle">
-        <HomeButtonSvg />
+        <HomeButtonSvg width="24" height="24" />
       </button>
     </div>
   );

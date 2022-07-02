@@ -17,7 +17,7 @@ const MoreButton = () => {
         aria-expanded="false"
         data-bs-offset="0,10"
       >
-        <MoreButtonSvg />
+        <MoreButtonSvg width="24" height="24" />
       </button>
       <ul
         className="dropdown-menu dropdown-menu-da1rk dropdown-menu-macos mx-0 shadow w-220px"

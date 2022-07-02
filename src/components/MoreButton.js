@@ -28,8 +28,7 @@ const MoreButton = () => {
             className="dropdown-item d-flex gap-2 align-items-center rounded-3 active"
             href="#"
           >
-            <SearchSvg />
-            Lookup
+            <SearchSvg /> Lookup
           </a>
         </li>
         <li>
@@ -37,8 +36,7 @@ const MoreButton = () => {
             className="dropdown-item d-flex gap-2 align-items-center rounded-3"
             href="#"
           >
-            <ConvertSvg />
-            Convert
+            <ConvertSvg /> Convert
           </a>
         </li>
         <li>
@@ -49,8 +47,7 @@ const MoreButton = () => {
             className="dropdown-item d-flex gap-2 align-items-center rounded-3"
             href="https://github.com/omkartapale"
           >
-            <GithubSvg />
-            Github
+            <GithubSvg /> Github
           </a>
         </li>
         <li>
@@ -58,8 +55,7 @@ const MoreButton = () => {
             className="dropdown-item d-flex gap-2 align-items-center rounded-3"
             href="https://github.com/sponsors/omkartapale"
           >
-            <DonateSvg />
-            Support me!
+            <DonateSvg /> Support me!
           </a>
         </li>
         <li>
@@ -67,8 +63,7 @@ const MoreButton = () => {
             className="dropdown-item d-flex gap-2 align-items-center rounded-3"
             href="https://github.com/omkartapale/country-codes/issues/new/choose"
           >
-            <RaiseIssueSvg />
-            Raise an Issue
+            <RaiseIssueSvg /> Raise an Issue
           </a>
         </li>
         <li>
@@ -79,8 +74,7 @@ const MoreButton = () => {
             className="dropdown-item d-flex gap-2 align-items-center rounded-3"
             href="#"
           >
-            <HelpSvg />
-            Help
+            <HelpSvg /> Help
           </a>
         </li>
       </ul>

@@ -1,0 +1,12 @@
+.HomeButton {
+  .btn {
+    height: 48px;
+    width: 48px;
+    border: 2px;
+    padding: 5px 10px 8px;
+
+    &:hover {
+      background-color: var(--bs-gray-200);
+    }
+  }
+}

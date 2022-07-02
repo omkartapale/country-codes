@@ -8,7 +8,7 @@ function Header() {
       <div className="container-fluid d-grid gap-3 align-items-center">
         <div className="d-flex justify-content-between">
           <HomeButton></HomeButton>
-          <AppTitle className="AppTitle"></AppTitle>
+          <AppTitle></AppTitle>
           <MoreButton></MoreButton>
         </div>
       </div>

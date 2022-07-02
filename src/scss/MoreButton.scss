@@ -1,0 +1,36 @@
+.MoreButton {
+  .btn {
+    height: 48px;
+    width: 48px;
+    border: 2px;
+    padding: 7px 12px 8px;
+
+    &:hover {
+      background-color: var(--bs-gray-200);
+      //   background-color: var(--bs-gray-300);
+    }
+  }
+
+  .dropdown-menu {
+    // position: static;
+    // display: block;
+    // width: auto;
+    // margin: 4rem auto;
+  }
+
+  .dropdown-menu-macos {
+    // display: grid;
+    // gap: 0.25rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  .dropdown-menu-macos li {
+    padding: 0.1rem;
+  }
+  .dropdown-menu-macos .dropdown-item {
+    border-radius: 0.25rem;
+  }
+  .w-220px {
+    width: 220px;
+  }
+}

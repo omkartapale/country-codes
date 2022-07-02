@@ -1,9 +1,12 @@
-import '../scss/App.scss';
+import "../scss/App.scss";
+import Header from "../components/Header";
+import Search from "./Search";
 
 function App() {
   return (
     <div className="App">
-      Country Codes Lookup
+      <Header></Header>
+      <Search></Search>
     </div>
   );
 }

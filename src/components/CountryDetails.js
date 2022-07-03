@@ -7,8 +7,8 @@ const CountryDetails = () => {
     <div className="CountryDetails container">
       <div className="row mt-4 mt-md-5 pb-3 justify-content-center">
         <div className="col-md-10">
-          <div class="card px-4 pt-4 pb-3 shadow-sm">
-            <div class="card-body">
+          <div className="card px-4 pt-4 pb-3 shadow-sm">
+            <div className="card-body">
               <h2 className="mb-4">Found India for you!</h2>
               <div className="row">
                 <div className="col-md-6 col-xl-3">

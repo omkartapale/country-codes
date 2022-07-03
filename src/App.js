@@ -1,7 +1,7 @@
-import "../scss/App.scss";
-import Header from "../components/Header";
-import Search from "./Search";
-import CountryDetails from "./CountryDetails";
+import "./scss/App.scss";
+import Header from "./components/Header";
+import Search from "./components/Search";
+import CountryDetails from "./components/CountryDetails";
 
 function App() {
   return (

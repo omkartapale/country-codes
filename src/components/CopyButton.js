@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
+import copy from "copy-to-clipboard";
 
 import { ReactComponent as ClipboardSvg } from "../assets/clipboard.svg";
 import { ReactComponent as CopiedSvg } from "../assets/check.svg";
@@ -31,11 +32,14 @@ export class CopyButton extends Component {
   }
 
   setClipboard() {
-    this.setState({
-      copyState: true,
-      buttonTitle: "Copied",
-    });
-    // copy to Clipboard logic
+    if (copy(this.state.copyContent)) {
+      this.setState({
+        copyState: true,
+        buttonTitle: "Copied",
+      });
+    } else {
+      console.log("Error: Coudn't use clipboard on your browser");
+    }
   }
 
   render() {

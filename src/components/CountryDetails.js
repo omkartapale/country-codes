@@ -1,6 +1,5 @@
 import "../scss/CountryDetails.scss";
-import { ReactComponent as ClipboardSvg } from "../assets/clipboard.svg";
-import { ReactComponent as CopiedSvg } from "../assets/check.svg";
+import CopyButton from "./CopyButton";
 
 const CountryDetails = () => {
   return (
@@ -15,52 +14,28 @@ const CountryDetails = () => {
                   <p className="mb-3">Country Name:</p>
                   <p className="display-6 d-flex align-items-center justify-content-between">
                     India
-                    <button
-                      className="btn-clipboard"
-                      type="button"
-                      title="Copy to clipboard"
-                    >
-                      <ClipboardSvg width="24" height="24" />
-                    </button>
+                    <CopyButton copyContent="India" />
                   </p>
                 </div>
                 <div className="col-md-6 col-xl-3">
                   <p className="mb-3">Alpha-2 Code:</p>{" "}
                   <p className="display-6 d-flex align-items-center justify-content-between">
                     IN
-                    <button
-                      className="btn-clipboard"
-                      type="button"
-                      title="Copied"
-                    >
-                      <ClipboardSvg width="24" height="24" />
-                    </button>
+                    <CopyButton copyContent="IN" />
                   </p>
                 </div>
                 <div className="col-md-6 col-xl-3">
                   <p className="mb-3">Alpha-3 Code:</p>{" "}
                   <p className="display-6 d-flex align-items-center justify-content-between">
                     IND
-                    <button
-                      className="btn-clipboard"
-                      type="button"
-                      title="Copied"
-                    >
-                      <CopiedSvg width="24" height="24" />
-                    </button>
+                    <CopyButton copyContent="IND" />
                   </p>
                 </div>
                 <div className="col-md-6 col-xl-3">
                   <p className="mb-3">Num-3 Code:</p>
                   <p className="display-6 d-flex align-items-center justify-content-between">
-                    246
-                    <button
-                      className="btn-clipboard"
-                      type="button"
-                      title="Copy to clipboard"
-                    >
-                      <ClipboardSvg width="24" height="24" />
-                    </button>
+                    356
+                    <CopyButton copyContent="356" />
                   </p>
                 </div>
               </div>

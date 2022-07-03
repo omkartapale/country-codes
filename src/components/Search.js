@@ -1,4 +1,4 @@
-function Search() {
+const Search = ({ onChange }) => {
   return (
     <div className="Search container">
       <div className="row mt-3 mt-md-5 justify-content-center">
@@ -11,12 +11,13 @@ function Search() {
               name="lookupCountry"
               id="lookupCountry"
               className="form-control form-control-lg rounded-pill border border-5"
+              onChange={onChange}
             />
           </form>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Search;

@@ -6,7 +6,7 @@ function Search() {
           <form className="w-100" role="search">
             <input
               type="search"
-              placeholder="Search country..."
+              placeholder="Search country with name..."
               aria-label="Search"
               name="lookupCountry"
               id="lookupCountry"

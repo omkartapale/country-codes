@@ -19,7 +19,7 @@ export class CopyButton extends Component {
     this.setClipboard = this.setClipboard.bind(this);
   }
 
-  componentDidUpdate = () => {
+  componentDidUpdate() {
     if (this.state.copyState === true) {
       setTimeout(() => {
         this.setState({
@@ -28,7 +28,7 @@ export class CopyButton extends Component {
         });
       }, 2000);
     }
-  };
+  }
 
   setClipboard() {
     this.setState({
@@ -39,13 +39,6 @@ export class CopyButton extends Component {
   }
 
   render() {
-    // check for copyState before returning render to DOM
-    let btnSvg =
-      this.state.copyState === true ? (
-        <CopiedSvg width="24" height="24" />
-      ) : (
-        <ClipboardSvg width="24" height="24" />
-      );
     return (
       <button
         className="btn-clipboard"
@@ -53,7 +46,11 @@ export class CopyButton extends Component {
         title={this.state.buttonTitle}
         onClick={this.setClipboard}
       >
-        {btnSvg}
+        {this.state.copyState === true ? (
+          <CopiedSvg width="24" height="24" />
+        ) : (
+          <ClipboardSvg width="24" height="24" />
+        )}
       </button>
     );
   }

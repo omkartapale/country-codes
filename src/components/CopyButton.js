@@ -38,7 +38,7 @@ export class CopyButton extends Component {
         buttonTitle: "Copied",
       });
     } else {
-      console.log("Error: Coudn't use clipboard on your browser");
+      console.log("Error: Couldn't use clipboard on your browser");
     }
   }
 

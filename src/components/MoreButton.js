@@ -1,3 +1,5 @@
+import React from "react";
+import { NavLink } from "react-router-dom";
 import "../scss/MoreButton.scss";
 import { ReactComponent as MoreButtonSvg } from "../assets/more-button.svg";
 import { ReactComponent as SearchSvg } from "../assets/search.svg";
@@ -24,20 +26,20 @@ const MoreButton = () => {
         aria-labelledby="dLabel"
       >
         <li>
-          <a
-            className="dropdown-item d-flex gap-2 align-items-center rounded-3 active"
-            href="#"
+          <NavLink
+            to="/"
+            className="dropdown-item d-flex gap-2 align-items-center rounded-3 {(isActive ? 'active' : '')}"
           >
             <SearchSvg /> Lookup
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a
-            className="dropdown-item d-flex gap-2 align-items-center rounded-3"
-            href="#"
+          <NavLink
+            to="/convert"
+            className="dropdown-item d-flex gap-2 align-items-center rounded-3 {(isActive ? 'active' : '')}"
           >
             <ConvertSvg /> Convert
-          </a>
+          </NavLink>
         </li>
         <li>
           <hr className="dropdown-divider" />
@@ -70,12 +72,12 @@ const MoreButton = () => {
           <hr className="dropdown-divider" />
         </li>
         <li>
-          <a
-            className="dropdown-item d-flex gap-2 align-items-center rounded-3"
-            href="#"
+          <NavLink
+            to="/help"
+            className="dropdown-item d-flex gap-2 align-items-center rounded-3 {(isActive ? 'active' : '')}"
           >
             <HelpSvg /> Help
-          </a>
+          </NavLink>
         </li>
       </ul>
     </div>

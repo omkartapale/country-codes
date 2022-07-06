@@ -1,5 +1,5 @@
 import "../scss/CountryDetails.scss";
-import CopyButton from "./CopyButton";
+import CopyButton from "./common/CopyButton";
 
 const CountryDetails = ({ countryFound }) => {
   return (

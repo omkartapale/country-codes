@@ -1,5 +1,5 @@
-import "../scss/AppTitle.scss";
-import logo from "../assets/worldmap.png";
+import "../../scss/common/AppTitle.scss";
+import logo from "../../assets/worldmap.png";
 
 function AppTitle() {
   return (

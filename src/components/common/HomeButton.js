@@ -1,5 +1,5 @@
-import "../scss/HomeButton.scss";
-import { ReactComponent as HomeButtonSvg } from "../assets/home-button.svg";
+import "../../scss/common/HomeButton.scss";
+import { ReactComponent as HomeButtonSvg } from "../../assets/home-button.svg";
 
 const HomeButton = () => {
   return (

@@ -2,8 +2,8 @@ import PropTypes from "prop-types";
 import React, { Component } from "react";
 import copy from "copy-to-clipboard";
 
-import { ReactComponent as ClipboardSvg } from "../assets/clipboard.svg";
-import { ReactComponent as CopiedSvg } from "../assets/check.svg";
+import { ReactComponent as ClipboardSvg } from "../../assets/clipboard.svg";
+import { ReactComponent as CopiedSvg } from "../../assets/check.svg";
 
 export class CopyButton extends Component {
   static propTypes = {

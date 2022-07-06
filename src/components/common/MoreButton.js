@@ -1,13 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../scss/MoreButton.scss";
-import { ReactComponent as MoreButtonSvg } from "../assets/more-button.svg";
-import { ReactComponent as SearchSvg } from "../assets/search.svg";
-import { ReactComponent as ConvertSvg } from "../assets/convert.svg";
-import { ReactComponent as GithubSvg } from "../assets/github.svg";
-import { ReactComponent as DonateSvg } from "../assets/coin.svg";
-import { ReactComponent as RaiseIssueSvg } from "../assets/incognito.svg";
-import { ReactComponent as HelpSvg } from "../assets/question.svg";
+import "../../scss/common/MoreButton.scss";
+import { ReactComponent as MoreButtonSvg } from "../../assets/more-button.svg";
+import { ReactComponent as SearchSvg } from "../../assets/search.svg";
+import { ReactComponent as ConvertSvg } from "../../assets/convert.svg";
+import { ReactComponent as GithubSvg } from "../../assets/github.svg";
+import { ReactComponent as DonateSvg } from "../../assets/coin.svg";
+import { ReactComponent as RaiseIssueSvg } from "../../assets/incognito.svg";
+import { ReactComponent as HelpSvg } from "../../assets/question.svg";
 
 const MoreButton = () => {
   return (

@@ -46,7 +46,7 @@ export class Home extends Component {
     }
     return (
       <div className="Home">
-        <Search onChange={this.searchCountry} />
+        <Search placeholderText="Search country with name..." onChange={this.searchCountry} />
         {countryDetailsBlock}
       </div>
     );

@@ -1,4 +1,4 @@
-const Search = ({ onChange }) => {
+const Search = ({ placeholderText, onChange }) => {
   return (
     <div className="Search container">
       <div className="row mt-3 mt-md-5 justify-content-center">
@@ -6,7 +6,7 @@ const Search = ({ onChange }) => {
           <form className="w-100" role="search">
             <input
               type="search"
-              placeholder="Search country with name..."
+              placeholder={placeholderText}
               aria-label="Search"
               name="lookupCountry"
               id="lookupCountry"

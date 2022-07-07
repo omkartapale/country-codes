@@ -13,8 +13,8 @@ function App() {
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="convert" element={<Convert />} />
-          <Route exact path="help" element={<Help />} />
+          <Route path="/convert" element={<Convert />} />
+          <Route path="/help" element={<Help />} />
         </Routes>
       </Router>
     </div>

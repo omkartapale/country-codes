@@ -94,21 +94,43 @@ export class Help extends Component {
               <p className="footer-app-title fw-bold mb-0">
                 Country Codes Lookup
               </p>
-              <p className="version">
-                Version: v{packageJson.version}
-              </p>
+              <p className="version">Version: v{packageJson.version}</p>
               <ul className="d-flex align-items-center justify-content-center gap-4">
                 <li className="d-flex gap-2 align-items-center">
-                  <GithubSvg /> Github
+                  <a
+                    href="https://github.com/omkartapale"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <GithubSvg /> Github
+                  </a>
                 </li>
                 <li className="d-flex gap-2 align-items-center">
-                  <ContributeSvg /> Contribute
+                  <a
+                    href="https://github.com/omkartapale"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <ContributeSvg /> Contribute
+                  </a>
                 </li>
                 <li className="d-flex gap-2 align-items-center">
-                  <DonateSvg /> Donate
+                  <a
+                    href="https://github.com/sponsors/omkartapale"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <DonateSvg /> Donate
+                  </a>
                 </li>
                 <li className="d-flex gap-2 align-items-center">
-                  <RaiseIssueSvg /> Raise an Issue
+                  <a
+                    href="https://github.com/omkartapale/country-codes/issues/new/choose"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <RaiseIssueSvg /> Raise an Issue
+                  </a>
                 </li>
               </ul>
             </div>

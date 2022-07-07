@@ -29,7 +29,7 @@ export class Home extends Component {
         break;
       case false:
         countryDetailsBlock = (
-          <div className="container">
+          <div className="container animate">
             <h3 className="mt-5 pt-3 text-center text-muted">
               Sorry, country not found!
             </h3>

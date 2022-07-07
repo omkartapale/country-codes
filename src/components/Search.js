@@ -1,6 +1,6 @@
 const Search = ({ placeholderText, onChange }) => {
   return (
-    <div className="Search container">
+    <div className="Search container animate slide">
       <div className="row mt-3 mt-md-5 justify-content-center">
         <div className="col-md-8">
           <form className="w-100" role="search">

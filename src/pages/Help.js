@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import packageJson from "../../package.json";
 import "../scss/Help.scss";
+import { ReactComponent as HelpSvg } from "../assets/question.svg";
 import { ReactComponent as GithubSvg } from "../assets/github.svg";
 import { ReactComponent as ContributeSvg } from "../assets/git.svg";
 import { ReactComponent as DonateSvg } from "../assets/coin.svg";
@@ -12,12 +13,16 @@ export class Help extends Component {
       <div className="Help container">
         <div className="row mt-3 mt-md-4 justify-content-center">
           <div className="col-md-10">
-            <div className="card px-4 pt-4 mb-3 shadow-sm">
-              <div className="card-body">
-                <h2 className="text-center pb-4 text-uppercase">Help</h2>
+            <div className="card shadow-sm mb-3">
+              <div className="card-header px-4">
+                <h2 className="card-title py-1 m-0 d-flex align-items-center justify-content-between">
+                  Help <HelpSvg width="1em" height="1em" />
+                </h2>
+              </div>
+              <div className="card-body px-4 pt-4">
                 <p>
-                  <b>Contry Codes Lookup</b> is a open source application
-                  licensed under{" "}
+                  <b>Country Codes Lookup</b> is an Open-Source application
+                  licensed under the{" "}
                   <a
                     href="https://github.com/omkartapale/iso3166-lookup/blob/main/LICENSE"
                     target="_blank"
@@ -26,13 +31,13 @@ export class Help extends Component {
                     MIT license
                   </a>
                   {". "}
-                  It is developed to provide ease to search, lookup and
+                  It's developed to provide easy search, lookup, and
                   interconvert country codes with ISO 3166-1:2020 standard. The
                   supported country code types are <code>Alpha-2</code>,{" "}
-                  <code>Alpha-3</code> and <code>Num-3</code>. You can search
-                  with Country name, or lookup for codes throughout database and
-                  the same type copy results into your clipboard enabling you to
-                  paste it anywhere you want.
+                  <code>Alpha-3</code>, and <code>Num-3</code>. You can search
+                  with Country names or lookup codes throughout the database or
+                  interconvert from one type to another and copy results into
+                  the clipboard, enabling you to paste them anywhere you want.
                 </p>
                 <p className="fw-bold text-center pt-2">
                   Open Source dependencies:
@@ -49,11 +54,20 @@ export class Help extends Component {
                   </li>
                   <li className="list-inline-item">
                     <a
-                      href="https://nodejs.org/"
+                      href="https://www.npmjs.com/"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Nodejs
+                      NPM
+                    </a>
+                  </li>
+                  <li className="list-inline-item">
+                    <a
+                      href="https://getbootstrap.com"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Bootstrap
                     </a>
                   </li>
                   <li className="list-inline-item">
@@ -74,15 +88,6 @@ export class Help extends Component {
                       copy-to-clipboard
                     </a>
                   </li>
-                  <li className="list-inline-item">
-                    <a
-                      href="https://getbootstrap.com"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Bootstrap
-                    </a>
-                  </li>
                   <li>and others...</li>
                 </ul>
               </div>
@@ -95,7 +100,7 @@ export class Help extends Component {
                 Country Codes Lookup
               </p>
               <p className="version">Version: v{packageJson.version}</p>
-              <ul className="d-flex align-items-center justify-content-center gap-4">
+              <ul className="d-flex align-items-center justify-content-center gap-4 px-5">
                 <li className="d-flex gap-2 align-items-center">
                   <a
                     href="https://github.com/omkartapale"
@@ -129,7 +134,7 @@ export class Help extends Component {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <RaiseIssueSvg /> Raise an Issue
+                    <RaiseIssueSvg /> Issue
                   </a>
                 </li>
               </ul>

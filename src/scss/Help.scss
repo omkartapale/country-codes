@@ -1,17 +1,22 @@
-.Help{
-    .card{
-        height: auto;
-        border-radius: 2rem;
-    }
+.Help {
+  .card {
+    height: auto;
+    border-radius: 2rem;
 
-    .help-footer{
-        a{
-            text-decoration: none;
-            color: var(--bs-body-color);
-            
-            &:hover{
-                color: #0d6efd;
-            }
-        }
+    .card-header {
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
     }
+  }
+
+  .help-footer {
+    a {
+      text-decoration: none;
+      color: var(--bs-body-color);
+
+      &:hover {
+        color: #0d6efd;
+      }
+    }
+  }
 }

@@ -48,6 +48,8 @@ const MoreButton = () => {
           <a
             className="dropdown-item d-flex gap-2 align-items-center rounded-3"
             href="https://github.com/omkartapale"
+            target="_blank"
+            rel="noreferrer"
           >
             <GithubSvg /> Github
           </a>
@@ -56,6 +58,8 @@ const MoreButton = () => {
           <a
             className="dropdown-item d-flex gap-2 align-items-center rounded-3"
             href="https://github.com/sponsors/omkartapale"
+            target="_blank"
+            rel="noreferrer"
           >
             <DonateSvg /> Support me!
           </a>
@@ -64,6 +68,8 @@ const MoreButton = () => {
           <a
             className="dropdown-item d-flex gap-2 align-items-center rounded-3"
             href="https://github.com/omkartapale/country-codes/issues/new/choose"
+            target="_blank"
+            rel="noreferrer"
           >
             <RaiseIssueSvg /> Raise an Issue
           </a>

@@ -1,7 +1,7 @@
 const Search = ({ placeholderText, onChange }) => {
   return (
     <div className="Search container">
-      <div className="row mt-3 mt-md-5 justify-content-center">
+      <div className="row justify-content-center">
         <div className="col-md-8">
           <form className="w-100" role="search">
             <input

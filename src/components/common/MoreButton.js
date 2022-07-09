@@ -35,10 +35,10 @@ const MoreButton = () => {
         </li>
         <li>
           <NavLink
-            to="/convert"
+            to="/interconvert"
             className="dropdown-item d-flex gap-2 align-items-center rounded-3 {(isActive ? 'active' : '')}"
           >
-            <ConvertSvg /> Convert
+            <ConvertSvg /> Interconvert
           </NavLink>
         </li>
         <li>

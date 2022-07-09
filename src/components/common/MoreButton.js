@@ -28,17 +28,17 @@ const MoreButton = () => {
         <li>
           <NavLink
             to="/"
-            className="dropdown-item d-flex gap-2 align-items-center rounded-3 {(isActive ? 'active' : '')}"
+            className="dropdown-item d-flex gap-2 align-items-center rounded-3"
           >
             <SearchSvg /> Lookup
           </NavLink>
         </li>
         <li>
           <NavLink
-            to="/convert"
-            className="dropdown-item d-flex gap-2 align-items-center rounded-3 {(isActive ? 'active' : '')}"
+            to="/interconvert"
+            className="dropdown-item d-flex gap-2 align-items-center rounded-3"
           >
-            <ConvertSvg /> Convert
+            <ConvertSvg /> Interconvert
           </NavLink>
         </li>
         <li>
@@ -80,7 +80,7 @@ const MoreButton = () => {
         <li>
           <NavLink
             to="/help"
-            className="dropdown-item d-flex gap-2 align-items-center rounded-3 {(isActive ? 'active' : '')}"
+            className="dropdown-item d-flex gap-2 align-items-center rounded-3"
           >
             <HelpSvg /> Help
           </NavLink>

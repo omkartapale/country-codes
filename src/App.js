@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./scss/App.scss";
 import Header from "./components/common/Header";
 import Home from "./pages/Home";
-import Convert from "./pages/Convert";
+import Interconvert from "./pages/Interconvert";
 import Help from "./pages/Help";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/convert" element={<Convert />} />
+          <Route path="/interconvert" element={<Interconvert />} />
           <Route path="/help" element={<Help />} />
         </Routes>
       </Router>

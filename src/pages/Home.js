@@ -45,11 +45,15 @@ export class Home extends Component {
         );
     }
     return (
-      <div className="Home mt-3 mt-md-5">
-        <Search
-          placeholderText="Search country with name..."
-          onChange={this.searchCountry}
-        />
+      <div className="Home mt-3 mt-md-5 container">
+        <div className="row justify-content-center">
+          <div className="col-md-8">
+            <Search
+              placeholderText="Search country with name..."
+              onChange={this.searchCountry}
+            />
+          </div>
+        </div>
         {countryDetailsBlock}
       </div>
     );

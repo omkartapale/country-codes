@@ -3,7 +3,7 @@ import CopyButton from "./common/CopyButton";
 
 const CountryDetails = ({ countryFound }) => {
   return (
-    <div className="CountryDetails container">
+    <div className="CountryDetails">
       <div className="row mt-4 mt-md-5 pb-3 justify-content-center">
         <div className="col-md-10">
           <div className="card px-4 pt-4 pb-3 shadow-sm">

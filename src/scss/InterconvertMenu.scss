@@ -1,0 +1,10 @@
+.InterconvertMenu {
+  .btn {
+    background-color: white;
+    border-radius: 2rem;
+
+    &:hover {
+      box-shadow: 0 0.5rem 1rem rgba(#000, 0.15);
+    }
+  }
+}

@@ -50,7 +50,7 @@ export class InterconvertNavTabs extends Component {
           )}
           {this.props.conversionType === "n3toa2" ? (
             <NavLink to="/interconvert/num3-to-alpha2" className="nav-link">
-              Num-2 <InterconvertSvg /> Alpha-2
+              Num-3 <InterconvertSvg /> Alpha-2
             </NavLink>
           ) : (
             <NavLink to="/interconvert/alpha2-to-num3" className="nav-link">

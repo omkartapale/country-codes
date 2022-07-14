@@ -155,51 +155,63 @@ export class Interconversion extends Component {
   regexNumExist = new RegExp("[0-9]+");
 
   convertCountry(name, output) {
-    if (name.length === 0) {
-      return null;
-    } else if (this.regexNumExist.test(name)) {
-      return false;
-    } else if (name.length < 4) {
-      return null;
-    } else {
-      return iso3166Lookup.findCountry(name, output);
+    if (name !== null) {
+      if (name.length === 0) {
+        return null;
+      } else if (this.regexNumExist.test(name)) {
+        return false;
+      } else if (name.length < 4) {
+        return null;
+      } else {
+        return iso3166Lookup.findCountry(name, output);
+      }
     }
+    return null;
   }
 
   convertAlpha2(code, output) {
-    if (code.length === 0) {
-      return null;
-    } else if (!this.regexAlpha.test(code) || code.length > 2) {
-      return false;
-    } else if (code.length < 2) {
-      return null;
-    } else {
-      return iso3166Lookup.findAlpha2(code, output);
+    if (code !== null) {
+      if (code.length === 0) {
+        return null;
+      } else if (!this.regexAlpha.test(code) || code.length > 2) {
+        return false;
+      } else if (code.length < 2) {
+        return null;
+      } else {
+        return iso3166Lookup.findAlpha2(code, output);
+      }
     }
+    return null;
   }
 
   convertAlpha3(code, output) {
-    if (code.length === 0) {
-      return null;
-    } else if (!this.regexAlpha.test(code) || code.length > 3) {
-      return false;
-    } else if (code.length < 3) {
-      return null;
-    } else {
-      return iso3166Lookup.findAlpha3(code, output);
+    if (code !== null) {
+      if (code.length === 0) {
+        return null;
+      } else if (!this.regexAlpha.test(code) || code.length > 3) {
+        return false;
+      } else if (code.length < 3) {
+        return null;
+      } else {
+        return iso3166Lookup.findAlpha3(code, output);
+      }
     }
+    return null;
   }
 
   convertNum3(code, output) {
-    if (code.length === 0) {
-      return null;
-    } else if (!this.regexNum.test(code) || code.length > 3) {
-      return false;
-    } else if (code.length < 3) {
-      return null;
-    } else {
-      return iso3166Lookup.findNum3(code, output);
+    if (code !== null) {
+      if (code.length === 0) {
+        return null;
+      } else if (!this.regexNum.test(code) || code.length > 3) {
+        return false;
+      } else if (code.length < 3) {
+        return null;
+      } else {
+        return iso3166Lookup.findNum3(code, output);
+      }
     }
+    return null;
   }
 
   render() {

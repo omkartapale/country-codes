@@ -12,7 +12,7 @@ export class InterconvertCodes extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      term: undefined,
+      searchTerm: undefined,
       convertedTerm: undefined,
     };
   }
@@ -24,7 +24,7 @@ export class InterconvertCodes extends Component {
           <div className="col-md-10 py-2">
             <div className="layout shadow-sm">
               <InterconvertNavTabs conversionType={this.props.conversionType} />
-              <Interconversion />
+              <Interconversion conversionType={this.props.conversionType} />
             </div>
           </div>
         </div>

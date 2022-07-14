@@ -21,5 +21,11 @@
       border-bottom-left-radius: 2rem;
       border-bottom-right-radius: 2rem;
     }
+
+    .btn {
+      &:hover {
+        background-color: var(--bs-gray-200);
+      }
+    }
   }
 }

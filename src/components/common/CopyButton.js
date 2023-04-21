@@ -20,6 +20,10 @@ export class CopyButton extends Component {
     this.setClipboard = this.setClipboard.bind(this);
   }
 
+  static getDerivedStateFromProps(props, state) {
+    return {copyContent: props.copyContent };
+  }
+
   componentDidUpdate() {
     if (this.state.copyState === true) {
       setTimeout(() => {
@@ -32,7 +36,8 @@ export class CopyButton extends Component {
   }
 
   setClipboard() {
-    if (copy(this.state.copyContent)) {
+    copy("");
+    if (copy(this.state.copyContent, { format: "text/plain" })) {
       this.setState({
         copyState: true,
         buttonTitle: "Copied",

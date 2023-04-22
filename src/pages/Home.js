@@ -8,7 +8,7 @@ export class Home extends Component {
   };
 
   searchCountry = (e) => {
-    let searchTerm = e.target.value;
+    let searchTerm = e.target.value.trim();
     if (searchTerm.length > 2) {
       let countrySearch = iso3166Lookup.findCountry(searchTerm);
       countrySearch = countrySearch === undefined ? false : countrySearch;

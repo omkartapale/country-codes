@@ -10,73 +10,73 @@ export class Interconversion extends Component {
     ctoa2: [
       "Convert Country name to Alpha-2",
       "Country name",
-      "Alpha-2",
+      "Alpha-2 code",
       "Convert Alpha-2 to Country name",
     ],
     ctoa3: [
       "Convert Country name to Alpha-3",
       "Country name",
-      "Alpha-3",
+      "Alpha-3 code",
       "Convert Alpha-3 to Country name",
     ],
     cton3: [
       "Convert Country name to Num-3",
       "Country name",
-      "Num-3",
+      "Num-3 code",
       "Convert Num-3 to Country name",
     ],
     a2toc: [
       "Convert Alpha-2 to Country name",
-      "Alpha-2",
+      "Alpha-2 code",
       "Country name",
       "Convert Country name to Alpha-2",
     ],
     a2toa3: [
       "Convert Alpha-2 to Alpha-3",
-      "Alpha-2",
-      "Alpha-3",
+      "Alpha-2 code",
+      "Alpha-3 code",
       "Convert Alpha-3 to Alpha-2",
     ],
     a2ton3: [
       "Convert Alpha-2 to Num-3",
-      "Alpha-2",
-      "Num-3",
+      "Alpha-2 code",
+      "Num-3 code",
       "Convert Num-3 to Alpha-2",
     ],
     a3toc: [
       "Convert Alpha-3 to Country name",
-      "Alpha-3",
+      "Alpha-3 code",
       "Country name",
       "Convert Country name to Alpha-3",
     ],
     a3toa2: [
       "Convert Alpha-3 to Alpha-2",
-      "Alpha-3",
-      "Alpha-2",
+      "Alpha-3 code",
+      "Alpha-2 code",
       "Convert Alpha-2 to Alpha-3",
     ],
     a3ton3: [
       "Convert Alpha-3 to Num-3",
-      "Alpha-3",
-      "Num-3",
+      "Alpha-3 code",
+      "Num-3 code",
       "Convert Num-3 to Alpha-3",
     ],
     n3toc: [
       "Convert Num-3 to Country name",
-      "Num-3",
+      "Num-3 code",
       "Country name",
       "Convert Country name to Num-3",
     ],
     n3toa2: [
       "Convert Num-3 to Alpha-2",
-      "Num-3",
-      "Alpha-2",
+      "Num-3 code",
+      "Alpha-2 code",
       "Convert Alpha-2 to Num-3",
     ],
     n3toa3: [
       "Convert Num-3 to Alpha-3",
-      "Num-3",
-      "Alpha-3",
+      "Num-3 code",
+      "Alpha-3 code",
       "Convert Alpha-3 to Num-3",
     ],
   };
@@ -221,41 +221,22 @@ export class Interconversion extends Component {
         resultBlock = (
           <p className="fs-4 mb-0">
             Sorry, No matching{" "}
-            {this.conversionData[this.props.conversionType][1] ===
-            "Country name"
-              ? this.conversionData[this.props.conversionType][1]
-              : this.conversionData[this.props.conversionType][1] +
-                " Code"}{" "}
-            found!
+            {this.conversionData[this.props.conversionType][1]} found!
           </p>
         );
         break;
       case false:
         resultBlock = (
           <p className="fs-4 mb-0 text-warning">
-            Invalid{" "}
-            {this.conversionData[this.props.conversionType][1] ===
-            "Country name"
-              ? this.conversionData[this.props.conversionType][1]
-              : this.conversionData[this.props.conversionType][1] + " Code"}
-            !
+            Invalid {this.conversionData[this.props.conversionType][1]}!
           </p>
         );
         break;
       case null:
         resultBlock = (
           <p className="fs-4 mb-0 text-muted">
-            Enter{" "}
-            {this.conversionData[this.props.conversionType][1] ===
-            "Country name"
-              ? this.conversionData[this.props.conversionType][1]
-              : this.conversionData[this.props.conversionType][1] +
-                " Code"}{" "}
-            to convert into{" "}
-            {this.conversionData[this.props.conversionType][2] ===
-            "Country name"
-              ? this.conversionData[this.props.conversionType][2]
-              : this.conversionData[this.props.conversionType][2] + " Code"}
+            Enter {this.conversionData[this.props.conversionType][1]} to convert
+            into {this.conversionData[this.props.conversionType][2]}
           </p>
         );
         break;
@@ -263,10 +244,7 @@ export class Interconversion extends Component {
         resultBlock = (
           <>
             <p className="fs-4 mb-0">
-              {this.conversionData[this.props.conversionType][2] ===
-              "Country name"
-                ? this.conversionData[this.props.conversionType][2] + ":"
-                : this.conversionData[this.props.conversionType][2] + " Code:"}
+              {this.conversionData[this.props.conversionType][2]}:
             </p>
             <p className="fs-4 mb-0">{this.state.convertedTerm}</p>
             <CopyButton copyContent={this.state.convertedTerm} />

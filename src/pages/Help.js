@@ -37,69 +37,62 @@ export class Help extends Component {
                   <code>Alpha-3</code>, and <code>Num-3</code>. You can search
                   with Country names or lookup codes throughout the database or
                   interconvert from one type to another and copy results into
-                  the clipboard, enabling you to paste them anywhere you want.
+                  the clipboard, enabling you to paste them anywhere you need.
                 </p>
-                <p className="fw-bold text-center pt-2">
-                  Open Source dependencies:
+                <p className="pt-1">
+                  <span className="fw-bold">Open Source dependencies: </span>
+                  <a
+                    href="https://reactjs.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    React
+                  </a>
+                  ,{" "}
+                  <a
+                    href="https://www.npmjs.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    NPM
+                  </a>
+                  ,{" "}
+                  <a
+                    href="https://getbootstrap.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Bootstrap
+                  </a>
+                  ,{" "}
+                  <a
+                    href="https://www.npmjs.com/package/iso3166-lookup"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    iso3166-lookup
+                  </a>
+                  ,{" "}
+                  <a
+                    href="https://www.npmjs.com/package/copy-to-clipboard"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    copy-to-clipboard
+                  </a>
                 </p>
-                <ul className="list-inline text-center">
-                  <li className="list-inline-item">
-                    <a
-                      href="https://reactjs.org/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      React
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a
-                      href="https://www.npmjs.com/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      NPM
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a
-                      href="https://getbootstrap.com"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Bootstrap
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a
-                      href="https://www.npmjs.com/package/iso3166-lookup"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      iso3166-lookup
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a
-                      href="https://www.npmjs.com/package/copy-to-clipboard"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      copy-to-clipboard
-                    </a>
-                  </li>
-                  <li>and others...</li>
-                </ul>
               </div>
             </div>
-            <div className="help-footer text-center mb-3">
+            <div className="help-footer text-center mb-2">
               <p className="copyright mb-0">
                 Copyright &copy; 2022 Omkar Tapale
               </p>
               <p className="footer-app-title fw-bold mb-0">
                 Country Codes Lookup
               </p>
-              <p className="version">Version: v{packageJson.version}</p>
+              <p className="version">
+                Version: <em>v{packageJson.version}</em>
+              </p>
               <ul className="d-flex align-items-center justify-content-center gap-4 px-5">
                 <li className="d-flex gap-2 align-items-center">
                   <a

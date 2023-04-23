@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
 import copy from "copy-to-clipboard";
+import "../../scss/common/CopyButton.scss";
 
 import { ReactComponent as ClipboardSvg } from "../../assets/clipboard.svg";
 import { ReactComponent as CopiedSvg } from "../../assets/check.svg";
@@ -21,7 +22,7 @@ export class CopyButton extends Component {
   }
 
   static getDerivedStateFromProps(props, state) {
-    return {copyContent: props.copyContent };
+    return { copyContent: props.copyContent };
   }
 
   componentDidUpdate() {
@@ -49,18 +50,20 @@ export class CopyButton extends Component {
 
   render() {
     return (
-      <button
-        className="btn-clipboard"
-        type="button"
-        title={this.state.buttonTitle}
-        onClick={this.setClipboard}
-      >
-        {this.state.copyState === true ? (
-          <CopiedSvg width="24" height="24" />
-        ) : (
-          <ClipboardSvg width="24" height="24" />
-        )}
-      </button>
+      <div className="CopyButton">
+        <button
+          className="btn rounded-circle p-2"
+          type="button"
+          title={this.state.buttonTitle}
+          onClick={this.setClipboard}
+        >
+          {this.state.copyState === true ? (
+            <CopiedSvg width="24" height="24" />
+          ) : (
+            <ClipboardSvg width="24" height="24" />
+          )}
+        </button>
+      </div>
     );
   }
 }

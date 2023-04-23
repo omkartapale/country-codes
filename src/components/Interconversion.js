@@ -232,7 +232,7 @@ export class Interconversion extends Component {
     switch (this.state.convertedTerm) {
       case undefined:
         resultBlock = (
-          <p className="fs-4 mb-0">
+          <p className="fs-4 py-2 mb-0">
             Sorry, No matching{" "}
             {this.conversionData[this.props.conversionType][1]} found!
           </p>
@@ -240,14 +240,14 @@ export class Interconversion extends Component {
         break;
       case false:
         resultBlock = (
-          <p className="fs-4 mb-0 text-warning">
+          <p className="fs-4 py-2 mb-0 text-warning">
             Invalid {this.conversionData[this.props.conversionType][1]}!
           </p>
         );
         break;
       case null:
         resultBlock = (
-          <p className="fs-4 mb-0 text-muted">
+          <p className="fs-4 py-2 mb-0 text-muted">
             Enter {this.conversionData[this.props.conversionType][1]} to convert
             into {this.conversionData[this.props.conversionType][2]}
           </p>
@@ -256,10 +256,10 @@ export class Interconversion extends Component {
       default:
         resultBlock = (
           <>
-            <p className="fs-4 mb-0">
+            <p className="fs-4 py-2 mb-0">
               {this.conversionData[this.props.conversionType][2]}:
             </p>
-            <p className="fs-4 mb-0">{this.state.convertedTerm}</p>
+            <p className="fs-4 py-2 mb-0">{this.state.convertedTerm}</p>
             <CopyButton copyContent={this.state.convertedTerm} />
           </>
         );

@@ -15,31 +15,31 @@ const CountryDetails = ({ countryFound }) => {
                   <div className="row">
                     <div className="col-md-6 col-xl-3">
                       <p className="mb-3">Country Name:</p>
-                      <p className="display-6 d-flex align-items-center justify-content-between">
+                      <div className="display-6 d-flex align-items-center justify-content-between">
                         {countryFound.country}
                         <CopyButton copyContent={countryFound.country} />
-                      </p>
+                      </div>
                     </div>
                     <div className="col-md-6 col-xl-3">
                       <p className="mb-3">Alpha-2 Code:</p>
-                      <p className="display-6 d-flex align-items-center justify-content-between">
+                      <div className="display-6 d-flex align-items-center justify-content-between">
                         {countryFound.alpha2}
                         <CopyButton copyContent={countryFound.alpha2} />
-                      </p>
+                      </div>
                     </div>
                     <div className="col-md-6 col-xl-3">
                       <p className="mb-3">Alpha-3 Code:</p>
-                      <p className="display-6 d-flex align-items-center justify-content-between">
+                      <div className="display-6 d-flex align-items-center justify-content-between">
                         {countryFound.alpha3}
                         <CopyButton copyContent={countryFound.alpha3} />
-                      </p>
+                      </div>
                     </div>
                     <div className="col-md-6 col-xl-3">
                       <p className="mb-3">Num-3 Code:</p>
-                      <p className="display-6 d-flex align-items-center justify-content-between">
+                      <div className="display-6 d-flex align-items-center justify-content-between">
                         {countryFound.num3}
                         <CopyButton copyContent={countryFound.num3} />
-                      </p>
+                      </div>
                     </div>
                   </div>
                 </div>

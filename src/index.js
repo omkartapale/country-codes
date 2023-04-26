@@ -1,3 +1,4 @@
+import 'bootstrap/dist/js/bootstrap.bundle';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './scss/index.scss';

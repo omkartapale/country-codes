@@ -1,0 +1,10 @@
+.CopyButton {
+  .btn {
+    line-height: 1;
+
+    &:hover {
+      color: var(--bs-primary);
+      background-color: var(--bs-gray-200);
+    }
+  }
+}

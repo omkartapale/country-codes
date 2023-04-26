@@ -1,83 +1,96 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import Search from "../components/Search";
 import CopyButton from "../components/common/CopyButton";
 import { ReactComponent as InterconvertVerticalSvg } from "../assets/arrow-down-up.svg";
 import iso3166Lookup from "iso3166-lookup";
 
 export class Interconversion extends Component {
-  // conversionData = [placholder, from, to, interconvert-button-text]
+  // conversionData = [placholder, from, to, interconvert-button-text, inteconvert-url-part]
   conversionData = {
     ctoa2: [
       "Convert Country name to Alpha-2",
       "Country name",
-      "Alpha-2",
+      "Alpha-2 code",
       "Convert Alpha-2 to Country name",
+      "alpha2-to-country",
     ],
     ctoa3: [
       "Convert Country name to Alpha-3",
       "Country name",
-      "Alpha-3",
+      "Alpha-3 code",
       "Convert Alpha-3 to Country name",
+      "alpha3-to-country",
     ],
     cton3: [
       "Convert Country name to Num-3",
       "Country name",
-      "Num-3",
+      "Num-3 code",
       "Convert Num-3 to Country name",
+      "num3-to-country",
     ],
     a2toc: [
       "Convert Alpha-2 to Country name",
-      "Alpha-2",
+      "Alpha-2 code",
       "Country name",
       "Convert Country name to Alpha-2",
+      "country-to-alpha2",
     ],
     a2toa3: [
       "Convert Alpha-2 to Alpha-3",
-      "Alpha-2",
-      "Alpha-3",
+      "Alpha-2 code",
+      "Alpha-3 code",
       "Convert Alpha-3 to Alpha-2",
+      "alpha3-to-alpha2",
     ],
     a2ton3: [
       "Convert Alpha-2 to Num-3",
-      "Alpha-2",
-      "Num-3",
+      "Alpha-2 code",
+      "Num-3 code",
       "Convert Num-3 to Alpha-2",
+      "num3-to-alpha2",
     ],
     a3toc: [
       "Convert Alpha-3 to Country name",
-      "Alpha-3",
+      "Alpha-3 code",
       "Country name",
       "Convert Country name to Alpha-3",
+      "country-to-alpha3",
     ],
     a3toa2: [
       "Convert Alpha-3 to Alpha-2",
-      "Alpha-3",
-      "Alpha-2",
+      "Alpha-3 code",
+      "Alpha-2 code",
       "Convert Alpha-2 to Alpha-3",
+      "alpha2-to-alpha3",
     ],
     a3ton3: [
       "Convert Alpha-3 to Num-3",
-      "Alpha-3",
-      "Num-3",
+      "Alpha-3 code",
+      "Num-3 code",
       "Convert Num-3 to Alpha-3",
+      "num3-to-alpha3",
     ],
     n3toc: [
       "Convert Num-3 to Country name",
-      "Num-3",
+      "Num-3 code",
       "Country name",
       "Convert Country name to Num-3",
+      "country-to-num3",
     ],
     n3toa2: [
       "Convert Num-3 to Alpha-2",
-      "Num-3",
-      "Alpha-2",
+      "Num-3 code",
+      "Alpha-2 code",
       "Convert Alpha-2 to Num-3",
+      "alpha2-to-num3",
     ],
     n3toa3: [
       "Convert Num-3 to Alpha-3",
-      "Num-3",
-      "Alpha-3",
+      "Num-3 code",
+      "Alpha-3 code",
       "Convert Alpha-3 to Num-3",
+      "alpha3-to-num3",
     ],
   };
 
@@ -219,56 +232,34 @@ export class Interconversion extends Component {
     switch (this.state.convertedTerm) {
       case undefined:
         resultBlock = (
-          <p className="fs-4 mb-0">
+          <p className="fs-4 py-2 mb-0">
             Sorry, No matching{" "}
-            {this.conversionData[this.props.conversionType][1] ===
-            "Country name"
-              ? this.conversionData[this.props.conversionType][1]
-              : this.conversionData[this.props.conversionType][1] +
-                " Code"}{" "}
-            found!
+            {this.conversionData[this.props.conversionType][1]} found!
           </p>
         );
         break;
       case false:
         resultBlock = (
-          <p className="fs-4 mb-0 text-warning">
-            Invalid{" "}
-            {this.conversionData[this.props.conversionType][1] ===
-            "Country name"
-              ? this.conversionData[this.props.conversionType][1]
-              : this.conversionData[this.props.conversionType][1] + " Code"}
-            !
+          <p className="fs-4 py-2 mb-0 text-warning">
+            Invalid {this.conversionData[this.props.conversionType][1]}!
           </p>
         );
         break;
       case null:
         resultBlock = (
-          <p className="fs-4 mb-0 text-muted">
-            Enter{" "}
-            {this.conversionData[this.props.conversionType][1] ===
-            "Country name"
-              ? this.conversionData[this.props.conversionType][1]
-              : this.conversionData[this.props.conversionType][1] +
-                " Code"}{" "}
-            to convert into{" "}
-            {this.conversionData[this.props.conversionType][2] ===
-            "Country name"
-              ? this.conversionData[this.props.conversionType][2]
-              : this.conversionData[this.props.conversionType][2] + " Code"}
+          <p className="fs-4 py-2 mb-0 text-muted">
+            Enter {this.conversionData[this.props.conversionType][1]} to convert
+            into {this.conversionData[this.props.conversionType][2]}
           </p>
         );
         break;
       default:
         resultBlock = (
           <>
-            <p className="fs-4 mb-0">
-              {this.conversionData[this.props.conversionType][2] ===
-              "Country name"
-                ? this.conversionData[this.props.conversionType][2] + ":"
-                : this.conversionData[this.props.conversionType][2] + " Code:"}
+            <p className="fs-4 py-2 mb-0">
+              {this.conversionData[this.props.conversionType][2]}:
             </p>
-            <p className="fs-4 mb-0">{this.state.convertedTerm}</p>
+            <p className="fs-4 py-2 mb-0">{this.state.convertedTerm}</p>
             <CopyButton copyContent={this.state.convertedTerm} />
           </>
         );
@@ -289,13 +280,17 @@ export class Interconversion extends Component {
             </div>
 
             <div className="text-center mt-4">
-              <button
+              <NavLink
+                to={
+                  "/interconvert/" +
+                  this.conversionData[this.props.conversionType][4]
+                }
                 className="btn btn-lg"
                 title={this.conversionData[this.props.conversionType][3]}
               >
                 <InterconvertVerticalSvg width="24" height="24" />{" "}
                 {this.conversionData[this.props.conversionType][3]}
-              </button>
+              </NavLink>
             </div>
           </div>
         </div>

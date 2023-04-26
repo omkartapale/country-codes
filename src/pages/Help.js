@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import packageJson from "../../package.json";
 import "../scss/Help.scss";
 import { ReactComponent as HelpSvg } from "../assets/question.svg";
@@ -6,6 +6,48 @@ import { ReactComponent as GithubSvg } from "../assets/github.svg";
 import { ReactComponent as ContributeSvg } from "../assets/git.svg";
 import { ReactComponent as DonateSvg } from "../assets/coin.svg";
 import { ReactComponent as RaiseIssueSvg } from "../assets/incognito.svg";
+import { ReactComponent as ExternalLinkSvg } from "../assets/external-link.svg";
+
+function OSLibraries() {
+  const OSLibraries = [
+    {
+      name: "Bootstrap",
+      href: "https://getbootstrap.com",
+    },
+    {
+      name: "NPM",
+      href: "https://www.npmjs.com/",
+    },
+    {
+      name: "React",
+      href: "https://react.dev/",
+    },
+    {
+      name: "TypeIt React",
+      href: "https://www.typeitjs.com/",
+    },
+    {
+      name: "Copy to clipboard",
+      href: "https://www.npmjs.com/package/copy-to-clipboard",
+    },
+    {
+      name: "ISO3166 lookup",
+      href: "https://www.npmjs.com/package/iso3166-lookup",
+    },
+  ];
+  const OSLibrariesList = OSLibraries.sort((a, b) =>
+    a.name > b.name ? 1 : -1
+  ).map((library, i) => {
+    return (
+      <Fragment key={i}>
+        <a href={library.href} target="_blank" rel="noreferrer" key={i}>
+          <ExternalLinkSvg /> {library.name}
+        </a>{" "}
+      </Fragment>
+    );
+  });
+  return <>{OSLibrariesList}</>;
+}
 
 export class Help extends Component {
   render() {
@@ -41,51 +83,13 @@ export class Help extends Component {
                 </p>
                 <p className="pt-1">
                   <span className="fw-bold">Open Source dependencies: </span>
-                  <a
-                    href="https://reactjs.org/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    React
-                  </a>
-                  ,{" "}
-                  <a
-                    href="https://www.npmjs.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    NPM
-                  </a>
-                  ,{" "}
-                  <a
-                    href="https://getbootstrap.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Bootstrap
-                  </a>
-                  ,{" "}
-                  <a
-                    href="https://www.npmjs.com/package/iso3166-lookup"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    iso3166-lookup
-                  </a>
-                  ,{" "}
-                  <a
-                    href="https://www.npmjs.com/package/copy-to-clipboard"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    copy-to-clipboard
-                  </a>
+                  <OSLibraries />
                 </p>
               </div>
             </div>
             <div className="help-footer text-center mb-2">
               <p className="copyright mb-0">
-                Copyright &copy; 2022 Omkar Tapale
+                Copyright &copy; 2023 Omkar Tapale
               </p>
               <p className="footer-app-title fw-bold mb-0">
                 Country Codes Lookup

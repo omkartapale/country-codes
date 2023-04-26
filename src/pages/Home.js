@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Search from "../components/Search";
 import CountryDetails from "../components/CountryDetails";
+import IntroBox from "../components/IntroBox";
 import iso3166Lookup from "iso3166-lookup";
 export class Home extends Component {
   state = {
@@ -26,6 +27,7 @@ export class Home extends Component {
     let countryDetailsBlock;
     switch (this.state.country) {
       case undefined:
+        countryDetailsBlock = <IntroBox />;
         break;
       case false:
         countryDetailsBlock = (

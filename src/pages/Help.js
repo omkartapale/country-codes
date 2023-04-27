@@ -65,7 +65,7 @@ export class Help extends Component {
                   <b>Country Codes Lookup</b> is an Open-Source application
                   licensed under the{" "}
                   <a
-                    href="https://github.com/omkartapale/iso3166-lookup/blob/main/LICENSE"
+                    href="https://github.com/omkartapale/country-codes/blob/main/LICENSE"
                     target="_blank"
                     rel="noreferrer"
                   >

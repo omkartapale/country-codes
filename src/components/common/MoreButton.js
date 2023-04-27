@@ -47,7 +47,7 @@ const MoreButton = () => {
         <li>
           <a
             className="dropdown-item d-flex gap-2 align-items-center rounded-3"
-            href="https://github.com/omkartapale"
+            href="https://github.com/omkartapale/country-codes"
             target="_blank"
             rel="noreferrer"
           >

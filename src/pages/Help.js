@@ -2,7 +2,6 @@ import React, { Component, Fragment } from "react";
 import packageJson from "../../package.json";
 import "../scss/Help.scss";
 import { ReactComponent as HelpSvg } from "../assets/question.svg";
-import { ReactComponent as GithubSvg } from "../assets/github.svg";
 import { ReactComponent as ContributeSvg } from "../assets/git.svg";
 import { ReactComponent as DonateSvg } from "../assets/coin.svg";
 import { ReactComponent as RaiseIssueSvg } from "../assets/incognito.svg";
@@ -100,16 +99,7 @@ export class Help extends Component {
               <ul className="d-flex align-items-center justify-content-center gap-4 px-5">
                 <li className="d-flex gap-2 align-items-center">
                   <a
-                    href="https://github.com/omkartapale"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <GithubSvg /> Github
-                  </a>
-                </li>
-                <li className="d-flex gap-2 align-items-center">
-                  <a
-                    href="https://github.com/omkartapale"
+                    href="https://github.com/omkartapale/country-codes"
                     target="_blank"
                     rel="noreferrer"
                   >

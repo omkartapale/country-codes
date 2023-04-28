@@ -1,7 +1,9 @@
 {
+  "dir": "ltr",
+  "lang": "en-US",
   "short_name": "Country Codes",
   "name": "Country Codes Lookup",
-  "description":"ISO 3166-1 Country codes lookup application with interconversion of codes feature",
+  "description": "ISO 3166-1 Country codes lookup application with interconversion of codes feature",
   "icons": [
     {
       "src": "favicon.ico",
@@ -19,8 +21,43 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "id": "/?source=pwa",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "minimal-ui",
+  "theme_color": "#e9ecef",
+  "background_color": "#f8f9fa",
+  "orientation": "any",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Lookup Country",
+      "url": "/?source=pwa",
+      "description": "Lookup country and codes with ISO 3166-1:2020 standard.",
+      "icons": [
+        {
+          "src": "android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "any"
+        }
+      ]
+    },
+    {
+      "name": "Interconvert Codes",
+      "url": "/interconvert?source=pwa",
+      "description": "Interconvert country codes with ISO 3166-1:2020 standard.",
+      "icons": [
+        {
+          "src": "android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "any"
+        }
+      ]
+    }
+  ],
+  "features": ["Cross Platform", "fast", "simple"],
+  "categories": ["utilities","reference"]
 }

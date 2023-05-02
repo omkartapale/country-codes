@@ -33,6 +33,10 @@ function OSLibraries() {
       name: "ISO3166 lookup",
       href: "https://www.npmjs.com/package/iso3166-lookup",
     },
+    {
+      name: "Workbox",
+      href: "https://github.com/GoogleChrome/workbox",
+    },
   ];
   const OSLibrariesList = OSLibraries.sort((a, b) =>
     a.name > b.name ? 1 : -1
@@ -40,7 +44,7 @@ function OSLibraries() {
     return (
       <Fragment key={i}>
         <a href={library.href} target="_blank" rel="noreferrer" key={i}>
-          <ExternalLinkSvg /> {library.name}
+          {library.name} <ExternalLinkSvg />
         </a>{" "}
       </Fragment>
     );
@@ -61,7 +65,7 @@ export class Help extends Component {
                 </h2>
               </div>
               <div className="card-body px-4 pt-4">
-                <p>
+                <p className="mb-2">
                   <b>Country Codes Lookup</b> is an Open-Source application
                   licensed under the{" "}
                   <a
@@ -80,10 +84,12 @@ export class Help extends Component {
                   interconvert from one type to another and copy results into
                   the clipboard, enabling you to paste them anywhere you need.
                 </p>
-                <p className="pt-1">
-                  <span className="fw-bold">Open Source dependencies: </span>
-                  <OSLibraries />
-                </p>
+                <dl class="row mb-0">
+                  <dt class="col-sm-3">Open Source Attributions:</dt>
+                  <dd class="col-sm-9">
+                    <OSLibraries />
+                  </dd>
+                </dl>
               </div>
             </div>
             <div className="help-footer text-center mb-2">
@@ -93,10 +99,10 @@ export class Help extends Component {
               <p className="footer-app-title fw-bold mb-0">
                 Country Codes Lookup
               </p>
-              <p className="version">
+              <p className="version mb-2">
                 Version: <em>v{packageJson.version}</em>
               </p>
-              <ul className="d-flex align-items-center justify-content-center gap-4 px-5">
+              <ul className="d-flex align-items-center justify-content-center gap-4 px-5 ">
                 <li className="d-flex gap-2 align-items-center">
                   <a
                     href="https://github.com/omkartapale/country-codes"

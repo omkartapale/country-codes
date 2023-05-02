@@ -84,9 +84,9 @@ export class Help extends Component {
                   interconvert from one type to another and copy results into
                   the clipboard, enabling you to paste them anywhere you need.
                 </p>
-                <dl class="row mb-0">
-                  <dt class="col-sm-3">Open Source Attributions:</dt>
-                  <dd class="col-sm-9">
+                <dl className="row mb-0">
+                  <dt className="col-sm-3">Open Source Attributions:</dt>
+                  <dd className="col-sm-9">
                     <OSLibraries />
                   </dd>
                 </dl>

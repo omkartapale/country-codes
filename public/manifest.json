@@ -97,6 +97,43 @@
       ]
     }
   ],
-  "features": ["Cross Platform", "fast", "simple"],
-  "categories": ["utilities", "reference"]
+  "features": ["Cross Platform", "fast", "simple", "Works offline"],
+  "categories": ["utilities", "reference"],
+  "screenshots": [
+    {
+      "src": "media/screenshots/screenshot1.jpg",
+      "sizes": "1080x1920",
+      "label": "Search, Lookup Countries for ISO 3166-1:2020 Standard Codes."
+    },
+    {
+      "src": "media/screenshots/screenshot2.jpg",
+      "sizes": "1080x1920",
+      "label": "Interconvert Countries, Codes with ISO 3166-1:2020 Standardization."
+    },
+    {
+      "src": "media/screenshots/screenshot3.jpg",
+      "sizes": "1080x1920",
+      "label": "Works offline. Search, Lookup and Interconvert without any network. Just install PWA."
+    },
+    {
+      "src": "media/screenshots/screenshot4.jpg",
+      "sizes": "1080x1920",
+      "label": "Easily copy result in a single click."
+    },
+    {
+      "src": "media/screenshots/screenshot5.jpg",
+      "sizes": "1080x1920",
+      "label": "Responsive, Cross-platform ready."
+    },
+    {
+      "src": "media/screenshots/screenshot6.jpg",
+      "sizes": "1080x1920",
+      "label": "Native support. Choose from native shortcuts to tasks."
+    },
+    {
+      "src": "media/screenshots/screenshot7.jpg",
+      "sizes": "1080x1920",
+      "label": "Simple navigation."
+    }
+  ]
 }

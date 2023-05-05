@@ -7,6 +7,7 @@ import Interconvert from "./pages/Interconvert";
 import Help from "./pages/Help";
 import InterconvertCodes from "./pages/InterconvertCodes";
 import InterconvertMenu from "./components/InterconvertMenu";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <Route path="num3-to-alpha3" element={<InterconvertCodes conversionType="n3toa3"/>} />
           </Route>
           <Route path="help" element={<Help />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </Router>
     </div>

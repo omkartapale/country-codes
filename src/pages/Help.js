@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import { NavLink } from "react-router-dom";
 import packageJson from "../../package.json";
 import "../scss/Help.scss";
 import { ReactComponent as HelpSvg } from "../assets/question.svg";
@@ -6,6 +7,7 @@ import { ReactComponent as ContributeSvg } from "../assets/git.svg";
 import { ReactComponent as DonateSvg } from "../assets/coin.svg";
 import { ReactComponent as RaiseIssueSvg } from "../assets/incognito.svg";
 import { ReactComponent as ExternalLinkSvg } from "../assets/external-link.svg";
+import { ReactComponent as PolicySvg } from "../assets/policy.svg";
 
 function OSLibraries() {
   const OSLibraries = [
@@ -129,6 +131,11 @@ export class Help extends Component {
                   >
                     <RaiseIssueSvg /> Issue
                   </a>
+                </li>
+                <li className="d-flex gap-2 align-items-center">
+                  <NavLink to="/privacy-policy">
+                    <PolicySvg /> Privacy Policy
+                  </NavLink>
                 </li>
               </ul>
             </div>

@@ -6,8 +6,8 @@ import { ReactComponent as SearchSvg } from "../../assets/search.svg";
 import { ReactComponent as ConvertSvg } from "../../assets/convert.svg";
 import { ReactComponent as GithubSvg } from "../../assets/github.svg";
 import { ReactComponent as DonateSvg } from "../../assets/coin.svg";
-import { ReactComponent as RaiseIssueSvg } from "../../assets/incognito.svg";
-import { ReactComponent as HelpSvg } from "../../assets/question.svg";
+import { ReactComponent as RaiseIssueSvg } from "../../assets/bug.svg";
+import { ReactComponent as InfoSvg } from "../../assets/info-circle.svg";
 
 const MoreButton = () => {
   return (
@@ -82,7 +82,7 @@ const MoreButton = () => {
             to="/help"
             className="dropdown-item d-flex gap-2 align-items-center rounded-3"
           >
-            <HelpSvg /> Help
+            <InfoSvg /> About
           </NavLink>
         </li>
       </ul>

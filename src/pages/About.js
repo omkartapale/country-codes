@@ -2,10 +2,10 @@ import React, { Component, Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import packageJson from "../../package.json";
 import "../scss/Help.scss";
-import { ReactComponent as HelpSvg } from "../assets/question.svg";
+import { ReactComponent as InfoSvg } from "../assets/info-circle.svg";
 import { ReactComponent as ContributeSvg } from "../assets/git.svg";
 import { ReactComponent as DonateSvg } from "../assets/coin.svg";
-import { ReactComponent as RaiseIssueSvg } from "../assets/incognito.svg";
+import { ReactComponent as RaiseIssueSvg } from "../assets/bug.svg";
 import { ReactComponent as ExternalLinkSvg } from "../assets/external-link.svg";
 import { ReactComponent as PolicySvg } from "../assets/policy.svg";
 
@@ -54,7 +54,7 @@ function OSLibraries() {
   return <>{OSLibrariesList}</>;
 }
 
-export class Help extends Component {
+export class About extends Component {
   render() {
     return (
       <div className="Help container">
@@ -63,7 +63,7 @@ export class Help extends Component {
             <div className="card shadow-sm mb-3">
               <div className="card-header px-4">
                 <h2 className="card-title py-1 m-0 d-flex align-items-center justify-content-between">
-                  Help <HelpSvg width="1em" height="1em" />
+                  About <InfoSvg width="1em" height="1em" />
                 </h2>
               </div>
               <div className="card-body px-4 pt-4">
@@ -146,4 +146,4 @@ export class Help extends Component {
   }
 }
 
-export default Help;
+export default About;

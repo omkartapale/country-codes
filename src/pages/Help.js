@@ -134,7 +134,7 @@ export class Help extends Component {
                 </li>
                 <li className="d-flex gap-2 align-items-center">
                   <NavLink to="/privacy-policy">
-                    <PolicySvg /> Privacy Policy
+                    <PolicySvg /> Privacy
                   </NavLink>
                 </li>
               </ul>

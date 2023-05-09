@@ -5,7 +5,7 @@ export class Interconvert extends Component {
   render() {
     return (
       <div className="Interconvert container pb-2">
-        <h2 className="text-center pb-2">Interconvert Codes</h2>
+        <h1 className="text-center h2 pb-2">Interconvert Codes</h1>
 
         <Outlet />
       </div>

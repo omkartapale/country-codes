@@ -1,10 +1,25 @@
 .InterconvertMenu {
   .btn {
-    background-color: white;
+    background-color: var(--bs-body-bg);
     border-radius: 2rem;
 
-    &:hover {
+    &:hover,&:focus {
       box-shadow: 0 0.5rem 1rem rgba(#000, 0.15);
+    }
+  }
+}
+
+@import "bootstrap/scss/mixins/color-mode";
+$color-mode-type: data;
+
+@include color-mode(dark) {
+  .InterconvertMenu {
+    .btn {
+      background-color: var(--bs-tertiary-bg);
+      
+      &:hover,&:focus {
+        box-shadow: 0 0.5rem 1rem rgba(#000, 0.45);
+      }
     }
   }
 }

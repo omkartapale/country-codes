@@ -14,6 +14,7 @@ const MoreButton = () => {
     <div className="MoreButton dropdown">
       <button
         id="dLabel"
+        type="button"
         className="btn rounded-circle "
         data-bs-toggle="dropdown"
         aria-expanded="false"
@@ -22,7 +23,7 @@ const MoreButton = () => {
         <MoreButtonSvg width="24" height="24" />
       </button>
       <ul
-        className="dropdown-menu dropdown-menu-da1rk dropdown-menu-macos mx-0 shadow w-220px"
+        className="dropdown-menu dropdown-menu-macos mx-0 shadow w-220px"
         aria-labelledby="dLabel"
       >
         <li>

@@ -11,6 +11,10 @@
     .nav-tabs .nav-link {
       border-top-left-radius: 2rem;
       border-top-right-radius: 2rem;
+
+      &:hover,&:focus {
+        background-color: var(--bs-tertiary-bg);
+      }
     }
   }
 
@@ -23,8 +27,23 @@
     }
 
     .btn {
-      &:hover {
+      &:hover,&:focus {
         background-color: var(--bs-gray-200);
+      }
+    }
+  }
+}
+
+@import "bootstrap/scss/mixins/color-mode";
+$color-mode-type: data;
+
+@include color-mode(dark) {
+  .InterconvertCodes {
+    .Interconversion {
+      .btn {
+        &:hover,&:focus {
+          background-color: var(--bs-tertiary-bg);
+        }
       }
     }
   }

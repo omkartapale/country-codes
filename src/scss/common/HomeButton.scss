@@ -5,8 +5,22 @@
     border: 2px;
     padding: 5px 10px 8px;
 
-    &:hover {
+    &:hover,&:focus {
       background-color: var(--bs-gray-200);
+    }
+  }
+}
+
+@import "bootstrap/scss/mixins/color-mode";
+$color-mode-type: data;
+
+@include color-mode(dark) {
+  .HomeButton {
+    .btn {
+      &:hover,
+      &:focus {
+        background-color: var(--bs-tertiary-bg);
+      }
     }
   }
 }

@@ -2,9 +2,22 @@
   .btn {
     line-height: 1;
 
-    &:hover {
+    &:hover,&:focus {
       color: var(--bs-primary);
       background-color: var(--bs-gray-200);
+    }
+  }
+}
+
+@import "bootstrap/scss/mixins/color-mode";
+$color-mode-type: data;
+
+@include color-mode(dark) {
+  .CopyButton {
+    .btn {
+      &:hover,&:focus {
+        background-color: var(--bs-tertiary-bg);
+      }
     }
   }
 }

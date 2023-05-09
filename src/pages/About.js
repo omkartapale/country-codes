@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import packageJson from "../../package.json";
-import "../scss/Help.scss";
+import "../scss/About.scss";
 import { ReactComponent as InfoSvg } from "../assets/info-circle.svg";
 import { ReactComponent as ContributeSvg } from "../assets/git.svg";
 import { ReactComponent as DonateSvg } from "../assets/coin.svg";
@@ -57,14 +57,14 @@ function OSLibraries() {
 export class About extends Component {
   render() {
     return (
-      <div className="Help container">
+      <div className="About container">
         <div className="row mt-3 mt-md-4 justify-content-center">
           <div className="col-md-10">
             <div className="card shadow-sm mb-3">
               <div className="card-header px-4">
-                <h2 className="card-title py-1 m-0 d-flex align-items-center justify-content-between">
+                <h1 className="card-title py-1 m-0 h2 d-flex align-items-center justify-content-between">
                   About <InfoSvg width="1em" height="1em" />
-                </h2>
+                </h1>
               </div>
               <div className="card-body px-4 pt-4">
                 <p className="mb-2">
@@ -94,7 +94,7 @@ export class About extends Component {
                 </dl>
               </div>
             </div>
-            <div className="help-footer text-center mb-2">
+            <div className="footer text-center mb-2">
               <p className="copyright mb-0">
                 Copyright &copy; 2023 Omkar Tapale
               </p>

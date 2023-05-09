@@ -1,9 +1,12 @@
-.MoreButton {
+.ThemeSwitcher {
   .btn {
     height: 48px;
     width: 48px;
     border: 2px;
     padding: 7px 12px 8px;
+    margin-left: -48px;
+
+    transition: all 0.3s ease-in-out;
 
     &:hover,&:focus {
       background-color: var(--bs-gray-200);
@@ -20,7 +23,7 @@
   .dropdown-menu-macos .dropdown-item {
     border-radius: 0.25rem;
   }
-  .w-220px {
+  .w-220 {
     width: 220px;
   }
 }
@@ -29,7 +32,7 @@
 $color-mode-type: data;
 
 @include color-mode(dark) {
-  .MoreButton {
+  .ThemeSwitcher {
     .btn {
       &:hover,&:focus {
         background-color: var(--bs-tertiary-bg);

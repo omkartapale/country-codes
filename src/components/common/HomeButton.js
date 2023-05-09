@@ -11,7 +11,11 @@ const HomeButton = () => {
   };
   return (
     <div className="HomeButton dropdown">
-      <button className="btn rounded-circle" onClick={navigateToHome}>
+      <button
+        type="button"
+        className="btn rounded-circle"
+        onClick={navigateToHome}
+      >
         <HomeButtonSvg width="24" height="24" />
       </button>
     </div>

@@ -4,7 +4,7 @@ import "./scss/App.scss";
 import Header from "./components/common/Header";
 import Home from "./pages/Home";
 import Interconvert from "./pages/Interconvert";
-import Help from "./pages/Help";
+import About from "./pages/About";
 import InterconvertCodes from "./pages/InterconvertCodes";
 import InterconvertMenu from "./components/InterconvertMenu";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -32,7 +32,7 @@ function App() {
             <Route path="num3-to-alpha2" element={<InterconvertCodes conversionType="n3toa2"/>} />
             <Route path="num3-to-alpha3" element={<InterconvertCodes conversionType="n3toa3"/>} />
           </Route>
-          <Route path="help" element={<Help />} />
+          <Route path="help" element={<About />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </Router>

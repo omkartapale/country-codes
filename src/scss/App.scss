@@ -2,3 +2,12 @@
   min-height: 100vh;
   background-color: var(--bs-gray-100);
 }
+
+@import "bootstrap/scss/mixins/color-mode";
+$color-mode-type: data;
+
+@include color-mode(dark) {
+  .App {
+    background-color: var(--bs-body-bg);
+  }
+}

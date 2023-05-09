@@ -1,9 +1,15 @@
-.CopyButton {
+.ScrollToTopButton {
+  position: relative;
+
   .btn {
-    line-height: 1;
+    position: fixed;
+    bottom: 40px;
+    right: 25px;
+    z-index: 20;
+    padding: 8px;
+    border: 2px;
 
     &:hover,&:focus {
-      color: var(--bs-primary);
       background-color: var(--bs-gray-200);
     }
   }
@@ -13,7 +19,7 @@
 $color-mode-type: data;
 
 @include color-mode(dark) {
-  .CopyButton {
+  .ScrollToTopButton {
     .btn {
       &:hover,&:focus {
         background-color: var(--bs-tertiary-bg);

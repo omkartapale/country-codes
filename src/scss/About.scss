@@ -1,4 +1,4 @@
-.Help {
+.About {
   .card {
     height: auto;
     border-radius: 2rem;
@@ -6,17 +6,24 @@
     .card-header {
       border-top-left-radius: 2rem;
       border-top-right-radius: 2rem;
-      background-color: #FAFBFC;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
-  .help-footer {
+  .footer {
     a {
       text-decoration: none;
       color: var(--bs-body-color);
 
       &:hover {
-        color: #0d6efd;
+        color: var(--bs-link-hover-color);
       }
     }
   }

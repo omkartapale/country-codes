@@ -13,7 +13,7 @@ export class InterconvertMenu extends Component {
               <div className="col-6 col-lg-4 py-2 d-grid">
                 <NavLink
                   to="country-to-alpha2"
-                  className="btn bg-white border py-4"
+                  className="btn border py-4"
                 >
                   <p className="d-flex flex-column align-items-center gap-2 mb-0 fs-4 fw-light">
                     Country <InterconvertVerticalSvg /> Alpha-2
@@ -23,7 +23,7 @@ export class InterconvertMenu extends Component {
               <div className="col-6 col-lg-4 py-2 d-grid">
                 <NavLink
                   to="country-to-alpha3"
-                  className="btn bg-white border py-4"
+                  className="btn border py-4"
                 >
                   <p className="d-flex flex-column align-items-center gap-2 mb-0 fs-4 fw-light">
                     Country <InterconvertVerticalSvg /> Alpha-3
@@ -33,7 +33,7 @@ export class InterconvertMenu extends Component {
               <div className="col-6 col-lg-4 py-2 d-grid">
                 <NavLink
                   to="country-to-num3"
-                  className="btn bg-white border py-4"
+                  className="btn border py-4"
                 >
                   <p className="d-flex flex-column align-items-center gap-2 mb-0 fs-4 fw-light">
                     Country <InterconvertVerticalSvg /> Num-3
@@ -43,7 +43,7 @@ export class InterconvertMenu extends Component {
               <div className="col-6 col-lg-4 py-2 d-grid">
                 <NavLink
                   to="alpha2-to-alpha3"
-                  className="btn bg-white border py-4"
+                  className="btn border py-4"
                 >
                   <p className="d-flex flex-column align-items-center gap-2 mb-0 fs-4 fw-light">
                     Alpha-2 <InterconvertVerticalSvg /> Alpha-3
@@ -53,7 +53,7 @@ export class InterconvertMenu extends Component {
               <div className="col-6 col-lg-4 py-2 d-grid">
                 <NavLink
                   to="alpha2-to-num3"
-                  className="btn bg-white border py-4"
+                  className="btn border py-4"
                 >
                   <p className="d-flex flex-column align-items-center gap-2 mb-0 fs-4 fw-light">
                     Alpha-2 <InterconvertVerticalSvg /> Num-3
@@ -63,7 +63,7 @@ export class InterconvertMenu extends Component {
               <div className="col-6 col-lg-4 py-2 d-grid">
                 <NavLink
                   to="alpha3-to-num3"
-                  className="btn bg-white border py-4"
+                  className="btn border py-4"
                 >
                   <p className="d-flex flex-column align-items-center gap-2 mb-0 fs-4 fw-light">
                     Alpha-3 <InterconvertVerticalSvg /> Num-3

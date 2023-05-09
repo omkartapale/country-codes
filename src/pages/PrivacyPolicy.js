@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+import ScrollToTop from "../components/common/ScrollToTopButton";
 
 export class PrivacyPolicy extends Component {
   render() {
     return (
       <div className="PrivacyPolicy container">
+        <ScrollToTop />
         <div className="row justify-content-center">
           <div className="col-md-10 mb-5">
             <h1 className="h2 text-center mb-3">Privacy Policy</h1>

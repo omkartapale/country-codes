@@ -6,14 +6,15 @@ import { ReactComponent as SearchSvg } from "../../assets/search.svg";
 import { ReactComponent as ConvertSvg } from "../../assets/convert.svg";
 import { ReactComponent as GithubSvg } from "../../assets/github.svg";
 import { ReactComponent as DonateSvg } from "../../assets/coin.svg";
-import { ReactComponent as RaiseIssueSvg } from "../../assets/incognito.svg";
-import { ReactComponent as HelpSvg } from "../../assets/question.svg";
+import { ReactComponent as RaiseIssueSvg } from "../../assets/bug.svg";
+import { ReactComponent as InfoSvg } from "../../assets/info-circle.svg";
 
 const MoreButton = () => {
   return (
     <div className="MoreButton dropdown">
       <button
         id="dLabel"
+        type="button"
         className="btn rounded-circle "
         data-bs-toggle="dropdown"
         aria-expanded="false"
@@ -22,7 +23,7 @@ const MoreButton = () => {
         <MoreButtonSvg width="24" height="24" />
       </button>
       <ul
-        className="dropdown-menu dropdown-menu-da1rk dropdown-menu-macos mx-0 shadow w-220px"
+        className="dropdown-menu dropdown-menu-macos mx-0 shadow w-220px"
         aria-labelledby="dLabel"
       >
         <li>
@@ -82,7 +83,7 @@ const MoreButton = () => {
             to="/help"
             className="dropdown-item d-flex gap-2 align-items-center rounded-3"
           >
-            <HelpSvg /> Help
+            <InfoSvg /> About
           </NavLink>
         </li>
       </ul>

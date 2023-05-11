@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Country Codes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Search, Lookup and Interconvert Country codes with ISO 3166-1:2000 standard
 
-## Available Scripts
+Country Codes Lookup is an Open-Source application developed to provide easy search, lookup, and interconvert country codes with ISO 3166-1:2020 standard. The supported country code types are `Alpha-2`, `Alpha-3`, and `Num-3`. You can search with Country names or lookup codes throughout the database or interconvert from one type to another and copy results into the clipboard, enabling you to paste them anywhere you need.
 
-In the project directory, you can run:
+## Features
+- **PWA:** Available as PWA which can be installed from *Google Chrome* and *Microsoft Edge* or any competitive browser.
+- **Works Offline:** This application works fully on a client system, so works offline perfectly.
+- **Copy Result:** Simply click on copy button next to the result to copy it into the clipboard.
+- **Native Support:** PWA installed instance features accessibility to choose from native shortcuts to tasks.
+- **Dark and Light Mode:** Choose from a Dark or Light mode Theme or let it be set automatically according to your system settings.
 
-### `npm start`
+### Web version
+Visit the [website](https://country-codes.vercel.app/)
+### Android Application version
+This application is also available on *Google Play Store* as a Trusted Web Application (TWA). Use this link to [Download Android App](https://play.google.com/store/apps/details?id=app.vercel.country_codes.twa&utm_source=githubrepolink)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Contribution
+### Code of Conduct
+We follow a Contributor Covenant Code of Conduct that we expect project participants to adhere to. Please read [the full text](https://github.com/omkartapale/country-codes/blob/main/CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Reporting Issues
+If you think something is not wrong, or something is failing or if you have any feature request or suggestion please raise it to us [here](https://github.com/omkartapale/country-codes/issues/new/choose)
 
-### `npm test`
+## Credits and Attributions
+- **Libraries:**
+[Bootstrap](https://getbootstrap.com/), [Copy to Clipboard](https://www.npmjs.com/package/copy-to-clipboard), [ISO3166 lookup](https://www.npmjs.com/package/iso3166-lookup), [NPM](https://www.npmjs.com/), [React](https://react.dev/), [Typeit React](https://www.typeitjs.com/), [Workbox](https://github.com/GoogleChrome/workbox) and so on.
+- **Logo:**
+  The Country Codes App logo is a remix and build upon original graphics by [Twitter Twemoji](https://twemoji.twitter.com/) licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Google Play Store:** Google Play and the Google Play logo are trademarks of Google LLC.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## License
+Country Codes is [MIT licensed](https://github.com/omkartapale/country-codes/blob/main/LICENSE).
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<a href='https://play.google.com/store/apps/details?id=app.vercel.country_codes.twa&utm_source=githubrepo'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width='180'/></a>

@@ -6,15 +6,21 @@
   .InterconvertNavTabs {
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(var(--bs-body-color-rgb), 0.03);
 
     .nav-tabs .nav-link {
       border-top-left-radius: 2rem;
       border-top-right-radius: 2rem;
+      color: var(--bs-body);
 
-      &:hover,&:focus {
+      &:hover,
+      &:focus {
         background-color: var(--bs-tertiary-bg);
       }
+    }
+    .nav-tabs .nav-link.active {
+      color: var(--bs-nav-tabs-link-active-color);
+      background-color: var(--bs-nav-tabs-link-active-bg);
     }
   }
 
@@ -27,7 +33,8 @@
     }
 
     .btn {
-      &:hover,&:focus {
+      &:hover,
+      &:focus {
         background-color: var(--bs-gray-200);
       }
     }
@@ -41,7 +48,8 @@ $color-mode-type: data;
   .InterconvertCodes {
     .Interconversion {
       .btn {
-        &:hover,&:focus {
+        &:hover,
+        &:focus {
           background-color: var(--bs-tertiary-bg);
         }
       }

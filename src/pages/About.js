@@ -94,7 +94,7 @@ export class About extends Component {
                 </p>
                 <dl className="row mb-0">
                   <dt className="col-sm-3">Open Source Attributions:</dt>
-                  <dd className="col-sm-9">
+                  <dd className="col-sm-9 lh-lg">
                     <OSLibraries />
                   </dd>
                 </dl>

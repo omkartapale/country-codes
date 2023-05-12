@@ -32,7 +32,7 @@ function App() {
             <Route path="num3-to-alpha2" element={<InterconvertCodes conversionType="n3toa2"/>} />
             <Route path="num3-to-alpha3" element={<InterconvertCodes conversionType="n3toa3"/>} />
           </Route>
-          <Route path="help" element={<About />} />
+          <Route path="about" element={<About />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </Router>

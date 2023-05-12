@@ -81,7 +81,7 @@ const MoreButton = () => {
         </li>
         <li>
           <NavLink
-            to="/help"
+            to="/about"
             className="dropdown-item d-flex gap-2 align-items-center rounded-3"
           >
             <InfoSvg /> About

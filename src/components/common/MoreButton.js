@@ -19,6 +19,7 @@ const MoreButton = () => {
         data-bs-toggle="dropdown"
         aria-expanded="false"
         data-bs-offset="0,10"
+        aria-label="Open more options"
       >
         <MoreButtonSvg width="24" height="24" />
       </button>

@@ -8,6 +8,7 @@
     z-index: 20;
     padding: 8px;
     border: 2px;
+    background-color: var(--bs-body-bg);
 
     &:hover,&:focus {
       background-color: var(--bs-gray-200);

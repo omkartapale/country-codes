@@ -15,6 +15,7 @@ const HomeButton = () => {
         type="button"
         className="btn rounded-circle"
         onClick={navigateToHome}
+        aria-label="Navigate to home"
       >
         <HomeButtonSvg width="24" height="24" />
       </button>

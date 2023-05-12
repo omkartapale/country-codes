@@ -45,7 +45,13 @@ function OSLibraries() {
   ).map((library, i) => {
     return (
       <Fragment key={i}>
-        <a href={library.href} target="_blank" rel="noreferrer" key={i}>
+        <a
+          href={library.href}
+          className="me-2 text-nowrap"
+          target="_blank"
+          rel="noreferrer"
+          key={i}
+        >
           {library.name} <ExternalLinkSvg />
         </a>{" "}
       </Fragment>

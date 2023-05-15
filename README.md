@@ -14,23 +14,26 @@ Country Codes Lookup is an Open-Source application developed to provide easy sea
 ### Web version
 Visit the [website](https://country-codes.vercel.app/)
 ### Android Application version
-This application is also available on *Google Play Store* as a Trusted Web Application (TWA). Use this link to [Download Android App](https://play.google.com/store/apps/details?id=app.vercel.country_codes.twa&utm_source=githubrepolink)
+This application is also available on *Google Play Store* as a Trusted Web Application (TWA). Use this link to [Download Android App](https://play.google.com/store/apps/details?id=app.vercel.country_codes.twa&utm_source=githubrepolink).
 
 ## Contribution
-### Code of Conduct
-We follow a Contributor Covenant Code of Conduct that we expect project participants to adhere to. Please read [the full text](https://github.com/omkartapale/country-codes/blob/main/CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
+### Guidelines
+If you wish to contribute to this project, please read and follow the [guidelines](CONTRIBUTING.md).
 
-### Reporting Issues
-If you think something is not wrong, or something is failing or if you have any feature request or suggestion please raise it to us [here](https://github.com/omkartapale/country-codes/issues/new/choose)
+### Code of Conduct
+We follow a Contributor Covenant Code of Conduct that we expect project participants to adhere to. Please read [the full text](CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
+
+### Reporting Issues or Feature Request
+If you think something is not wrong, or something is failing or if you have any feature request or suggestion please [raise issue](https://github.com/omkartapale/country-codes/issues/new/choose).
 
 ## Credits and Attributions
 - **Libraries:**
 [Bootstrap](https://getbootstrap.com/), [Copy to Clipboard](https://www.npmjs.com/package/copy-to-clipboard), [ISO3166 lookup](https://www.npmjs.com/package/iso3166-lookup), [NPM](https://www.npmjs.com/), [React](https://react.dev/), [Typeit React](https://www.typeitjs.com/), [Workbox](https://github.com/GoogleChrome/workbox) and so on.
 - **Logo:**
-  The Country Codes App logo is a remix and build upon original graphics by [Twitter Twemoji](https://twemoji.twitter.com/) licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+  The Country Codes App logo is a remix and build upon original graphics by [Twitter Twemoji](https://twemoji.twitter.com/) licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 - **Google Play Store:** Google Play and the Google Play logo are trademarks of Google LLC.
 
 ## License
-Country Codes is [MIT licensed](https://github.com/omkartapale/country-codes/blob/main/LICENSE).
+Country Codes is [MIT licensed](LICENSE).
 
 <a href='https://play.google.com/store/apps/details?id=app.vercel.country_codes.twa&utm_source=githubrepo'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width='180'/></a>

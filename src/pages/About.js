@@ -110,6 +110,19 @@ export class About extends Component {
               <p className="version mb-2">
                 Version: <em>v{packageJson.version}</em>
               </p>
+              <p className="mb-2">
+                <a
+                  href="https://play.google.com/store/apps/details?id=app.vercel.country_codes.twa&utm_source=website"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    alt="Get it on Google Play"
+                    src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                    width="180"
+                  />
+                </a>
+              </p>
               <ul className="d-flex align-items-center justify-content-center gap-4 px-5 ">
                 <li className="d-flex gap-2 align-items-center">
                   <a

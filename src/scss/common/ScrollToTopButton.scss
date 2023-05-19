@@ -8,7 +8,7 @@
     z-index: 20;
     padding: 8px;
     border: 2px;
-    background-color: var(--bs-body-bg);
+    background-color: var(--bs-gray-100);
 
     &:hover,&:focus {
       background-color: var(--bs-gray-200);
@@ -22,6 +22,8 @@ $color-mode-type: data;
 @include color-mode(dark) {
   .ScrollToTopButton {
     .btn {
+      background-color: var(--bs-body-bg);
+
       &:hover,&:focus {
         background-color: var(--bs-tertiary-bg);
       }

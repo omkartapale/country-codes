@@ -8,6 +8,7 @@ import { ReactComponent as GithubSvg } from "../../assets/github.svg";
 import { ReactComponent as DonateSvg } from "../../assets/coin.svg";
 import { ReactComponent as RaiseIssueSvg } from "../../assets/bug.svg";
 import { ReactComponent as InfoSvg } from "../../assets/info-circle.svg";
+import { ReactComponent as GooglePlaySvg } from "../../assets/google-play.svg";
 
 const MoreButton = () => {
   return (
@@ -74,6 +75,16 @@ const MoreButton = () => {
             rel="noreferrer"
           >
             <RaiseIssueSvg /> Raise an Issue
+          </a>
+        </li>
+        <li>
+          <a
+            className="dropdown-item d-flex gap-2 align-items-center rounded-3"
+            href="https://play.google.com/store/apps/details?id=app.vercel.country_codes.twa&utm_source=website"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GooglePlaySvg /> Google Play
           </a>
         </li>
         <li>

@@ -48,11 +48,11 @@
       "purpose": "monochrome"
     }
   ],
-  "id": "/?source=pwa",
-  "start_url": "/?source=pwa",
+  "id": "/",
+  "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "theme_color": "#e9ecef",
+  "theme_color": "#f8f9fa",
   "background_color": "#f8f9fa",
   "orientation": "any",
   "related_applications": [
@@ -62,43 +62,44 @@
     }
   ],
   "prefer_related_applications": true,
+  "edge_side_panel": {},
   "iarc_rating_id": "b2ef975a-7845-427f-a407-1be1be59b089",
   "shortcuts": [
     {
       "name": "Lookup Country",
-      "url": "/?source=pwa",
+      "url": "/",
       "description": "Lookup country and codes with ISO 3166-1:2020 standard.",
       "icons": [
         {
           "src": "media/search-192x192.png",
           "sizes": "192x192",
           "type": "image/png",
-          "purpose": "any monochrome"
+          "purpose": "any"
         },
         {
           "src": "media/search.svg",
           "sizes": "any",
           "type": "image/svg+xml",
-          "purpose": "any monochrome"
+          "purpose": "any"
         }
       ]
     },
     {
       "name": "Interconvert Codes",
-      "url": "/interconvert?source=pwa",
+      "url": "/interconvert",
       "description": "Interconvert country codes with ISO 3166-1:2020 standard.",
       "icons": [
         {
           "src": "media/interconvert-192x192.png",
           "sizes": "192x192",
           "type": "image/png",
-          "purpose": "any monochrome"
+          "purpose": "any"
         },
         {
           "src": "media/interconvert.svg",
           "sizes": "any",
           "type": "image/svg+xml",
-          "purpose": "any monochrome"
+          "purpose": "any"
         }
       ]
     }

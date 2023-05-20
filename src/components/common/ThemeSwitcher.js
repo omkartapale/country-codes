@@ -45,14 +45,43 @@ export class ThemeSwitcher extends Component {
   }
 
   setTheme(theme) {
-    if (
-      theme === "auto" &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    ) {
-      document.documentElement.setAttribute("data-bs-theme", "dark");
-    } else {
+    /**
+     * This code is also working but need to update conditional block
+     * to change theme-color meta according to user choice.
+     * */
+    // if (
+    //   theme === "auto" &&
+    //   window.matchMedia("(prefers-color-scheme: dark)").matches
+    // ) {
+    //   document.documentElement.setAttribute("data-bs-theme", "dark");
+    // } else {
+    //   document.documentElement.setAttribute("data-bs-theme", theme);
+    // }
+
+    if (theme === "auto") {
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.documentElement.setAttribute("data-bs-theme", "dark");
+        document
+          .querySelector('meta[name="theme-color"]')
+          .setAttribute("content", "#212529");
+      } else {
+        document.documentElement.setAttribute("data-bs-theme", theme);
+        document
+          .querySelector('meta[name="theme-color"]')
+          .setAttribute("content", "#f8f9fa");
+      }
+    } else if (theme === "light") {
       document.documentElement.setAttribute("data-bs-theme", theme);
+      document
+        .querySelector('meta[name="theme-color"]')
+        .setAttribute("content", "#f8f9fa");
+    } else if (theme === "dark") {
+      document.documentElement.setAttribute("data-bs-theme", theme);
+      document
+        .querySelector('meta[name="theme-color"]')
+        .setAttribute("content", "#212529");
     }
+
     localStorage.setItem("theme", theme);
   }
 
